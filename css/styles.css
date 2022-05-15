@@ -1,0 +1,143 @@
+/*
+main-text-color: #757575
+hedings-text-color: #212121
+accent-text-color: #2196F3
+white-text-color: #FFFFFF
+white-text-color-footer: rgba(255, 255, 255, 0.6)
+main-background-color: #E5E5E5
+secondary-background-color: #F5F4FA
+footer/hero-background-color: #2F303A
+white-background-color: #FFFFFF
+*/
+:root{
+    --interim-heading-color: #212121;
+}
+
+.heading{
+    color: var(--interim-heading-color);
+}
+
+body {
+    background-color: #E5E5E5;
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/*Logo*/
+
+.logo {
+    color: #212121;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.logo>span {
+    color: #2196F3;
+}
+
+.list {
+    list-style: none;
+}
+
+/*site-nav*/
+
+.site-nav .link {
+    color: #212121;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #2196F3;
+}
+
+.address-nav .link {
+    color: #757575;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.address-nav .link:hover,
+.address-nav .link:focus {
+    color: #2196F3;
+}
+
+/*footer*/
+
+.physical-address {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-nav .link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/*hero*/
+
+.main-heading {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-button {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-family: inherit;
+}
+
+.hero-button:hover,
+.hero-button:focus {}
+
+/*advantages*/
+
+.advantages-list .heading {
+    color: #212121;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/*our team*/
+
+.position{
+    font-size: 16px;
+    line-height: 1.19;
+}
