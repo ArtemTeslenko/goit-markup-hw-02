@@ -9,17 +9,21 @@ secondary-background-color: #F5F4FA
 footer/hero-background-color: #2F303A
 white-background-color: #FFFFFF
 */
-:root{
+:root {
     --interim-heading-color: #212121;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --main-text-color: #757575;
+    --black-color: #212121;
 }
 
-.heading{
+.heading {
     color: var(--interim-heading-color);
 }
 
 body {
     background-color: #E5E5E5;
-    color: #757575;
+    color: var(--main-text-color);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -31,8 +35,8 @@ body {
 /*Logo*/
 
 .logo {
-    color: #212121;
-    font-family: 'Raleway';
+    color: var(--black-color);
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -51,51 +55,44 @@ body {
 /*site-nav*/
 
 .site-nav .link {
-    color: #212121;
-    font-style: normal;
+    color: var(--black-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .address-nav .link {
-    color: #757575;
-    font-style: normal;
+    color: var(--main-text-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
 .address-nav .link:hover,
 .address-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /*footer*/
 
 .physical-address {
-    color: #FFFFFF;
+    color: var(--white-color);
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .footer-nav .link {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+}
+
+.footer-nav .link:hover,
+.footer-nav .link:focus{
+    color: var(--accent-color);
 }
 
 /*hero*/
@@ -112,32 +109,64 @@ body {
 }
 
 .hero-button {
-    color: #FFFFFF;
+    color: var(--white-color);
+    background-color: var(--accent-color);
     display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     font-family: inherit;
+    cursor: pointer;
 }
 
 .hero-button:hover,
-.hero-button:focus {}
+.hero-button:focus {
+    /*didn't specified in the layout*/
+    background-color: tomato;
+}
 
 /*advantages*/
 
 .advantages-list .heading {
-    color: #212121;
-    font-style: normal;
+    color: var(--black-color);
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 /*our team*/
 
-.position{
+.position {
     font-size: 16px;
     line-height: 1.19;
+}
+
+/*portfolio filter*/
+.filter .button {
+    color: var(--interim-heading-color);
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.filter .button:hover,
+.filter .button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color)
+}
+
+/*portfolio work examples*/
+.examples .heading {
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.examples .work-type {
+    font-size: 16px;
+    line-height: 1.88;
 }
