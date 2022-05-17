@@ -18,14 +18,14 @@ white-background-color: #FFFFFF
     --black-color: #212121;
     --hero-footer-color: #2F303A;
     --our-team-bgc: #F5F4FA;
+    --footer-links-color: rgba(255, 255, 255, 0.6);
+    --button-accent-color: #188CE8;
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: var(--white-color);
     color: var(--main-text-color);
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -36,11 +36,15 @@ body {
 .logo {
     color: var(--logo-color);
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .page-head .logo>span {
@@ -57,6 +61,10 @@ body {
 
 .heading {
     color: var(--interim-heading-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 
 /*site-nav*/
@@ -96,13 +104,15 @@ body {
 
 /*footer*/
 
+/*normal because of address*/
 .physical-address {
     color: var(--white-color);
     font-style: normal;
 }
 
+/*normal because of address*/
 .footer-nav .link {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-links-color);
     font-style: normal;
 }
 
@@ -115,7 +125,6 @@ body {
 
 .main-heading {
     color: var(--white-color);
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -128,27 +137,35 @@ body {
     color: var(--white-color);
     background-color: var(--accent-color);
     display: flex;
-    letter-spacing: 0.06em;
     font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
     cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    /*didn't specified in the layout*/
-    background-color: tomato;
+    background: var(--button-accent-color);
 }
 
 /*advantages*/
 
 .advantages-list .heading {
     color: var(--black-color);
-    font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
 /*our team*/
+
+.our-team .member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
 
 .position {
     font-size: 16px;
@@ -180,7 +197,6 @@ body {
 /*portfolio work examples*/
 .examples .heading {
     color: var(--black-color);
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
