@@ -10,199 +10,209 @@ footer/hero-background-color: #2F303A
 white-background-color: #FFFFFF
 */
 :root {
-    --interim-heading-color: #212121;
-    --accent-color: #2196F3;
-    --logo-color: #2196F3;
-    --white-color: #FFFFFF;
-    --main-text-color: #757575;
-    --black-color: #212121;
-    --hero-footer-color: #2F303A;
-    --our-team-bgc: #F5F4FA;
-    --footer-links-color: rgba(255, 255, 255, 0.6);
-    --button-accent-color: #188CE8;
+  --interim-heading-color: #212121;
+  --accent-color: #2196f3;
+  --logo-color: #2196f3;
+  --white-color: #ffffff;
+  --main-text-color: #757575;
+  --black-color: #212121;
+  --hero-footer-color: #2f303a;
+  --our-team-bgc: #f5f4fa;
+  --footer-links-color: rgba(255, 255, 255, 0.6);
+  --button-accent-color: #188ce8;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-    background-color: var(--white-color);
-    color: var(--main-text-color);
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  background-color: var(--white-color);
+  color: var(--main-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /*Logo*/
 
 .logo {
-    color: var(--logo-color);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+  color: var(--logo-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.page-head .logo>span {
-    color: var(--black-color);
+.page-head .logo > span {
+  color: var(--black-color);
 }
 
-.basement .logo>span {
-    color: var(--white-color);
+.basement .logo > span {
+  color: var(--white-color);
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .heading {
-    color: var(--interim-heading-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+  color: var(--interim-heading-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 /*site-nav*/
 
 .page-head {
-    background-color: var(--white-color);
+  background-color: var(--white-color);
 }
 
 .site-nav .link {
-    color: var(--black-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  color: var(--black-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .address-nav .link {
-    color: var(--main-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .address-nav .link:hover,
 .address-nav .link:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .hero,
 .basement {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 /*footer*/
 
 /*normal because of address*/
 .physical-address {
-    color: var(--white-color);
-    font-style: normal;
+  color: var(--white-color);
+  font-style: normal;
 }
 
 /*normal because of address*/
 .footer-nav .link {
-    color: var(--footer-links-color);
-    font-style: normal;
+  color: var(--footer-links-color);
+  font-style: normal;
 }
 
 .footer-nav .link:hover,
 .footer-nav .link:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /*hero*/
 
 .main-heading {
-    color: var(--white-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-button {
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    display: flex;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  display: flex;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    background: var(--button-accent-color);
+  background: var(--button-accent-color);
 }
 
 /*advantages*/
 
 .advantages-list .heading {
-    color: var(--black-color);
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+  color: var(--black-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 /*our team*/
 
 .our-team .member {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .position {
-    font-size: 16px;
-    line-height: 1.19;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .our-team {
-    background-color: var(--our-team-bgc);
+  background-color: var(--our-team-bgc);
 }
 
 /*portfolio filter*/
 .filter .button {
-    color: var(--interim-heading-color);
-    font-family: inherit;
-    font-style: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-    cursor: pointer;
+  color: var(--interim-heading-color);
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .filter .button:hover,
 .filter .button:focus {
-    color: var(--white-color);
-    background-color: var(--accent-color)
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 /*portfolio work examples*/
 .examples .heading {
-    color: var(--black-color);
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+  color: var(--black-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .examples .work-type {
-    font-size: 16px;
-    line-height: 1.88;
+  font-size: 16px;
+  line-height: 1.88;
 }
